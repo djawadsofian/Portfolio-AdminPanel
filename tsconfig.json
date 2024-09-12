@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",                        // Updated to ES6 for modern JavaScript support
+    "lib": ["dom", "dom.iterable", "esnext"], // Kept same, ensures support for latest DOM and ES features
+    "allowJs": true,                        // Allows JavaScript files to be compiled
+    "skipLibCheck": true,                   // Skips type checking for libraries to speed up compilation
+    "esModuleInterop": true,                // Ensures compatibility between CommonJS and ES modules
+    "allowSyntheticDefaultImports": true,   // Allows default imports even if the module doesn't have one
+    "strict": true,                         // Enables strict type checking
+    "forceConsistentCasingInFileNames": true, // Forces consistent file naming
+    "module": "esnext",                     // Use 'esnext' to support dynamic imports
+    "moduleResolution": "node",             // Helps in resolving modules as Node does
+    "resolveJsonModule": true,              // Allows importing .json files
+    "isolatedModules": true,                // Ensures each file is treated as a separate module
+    "noEmit": true,                         // Disables emitting compiled files, usually handled by bundler
+    "jsx": "react-jsx"                      // Use 'react-jsx' if using React 17+ or "react" for older versions
+  },
+  "include": ["src"],                        // Include the source directory for TypeScript compilation
+  "exclude": ["node_modules", "dist"]        // Exclude node_modules and dist folders
+}
